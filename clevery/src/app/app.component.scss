@@ -1,0 +1,46 @@
+.calltoactionphone {
+    font-size: 20px;
+    color: #fff;
+    position: fixed;
+    right: 20px;
+    bottom: 331px;
+        width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: #f3d300;
+    text-align: center;
+    z-index: 99;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+
+}
+.calltoactionphone:hover {
+
+    width: 200px;
+    height: 40px;
+
+}
+.calltoactionadmision {
+    font-size: 20px;
+    color: #fff;
+    position: fixed;
+    right: 20px;
+    bottom: 255px;
+        width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: #f3d300;
+    text-align: center;
+    z-index: 99;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+
+}
+.calltoactionadmision:hover {
+
+    width: 200px;
+    height: 40px;
+
+}

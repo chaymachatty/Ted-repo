@@ -1,0 +1,75 @@
+
+
+<section class="about_area pt-80">
+    <h1>&nbsp;</h1>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 ">
+                 <div class="list-group ">
+                  <a  class="list-group-item list-group-item-action active"  href="#tab1" data-toggle="tab">Dashboard</a>
+                  <a class="list-group-item list-group-item-action" href="#tab2" data-toggle="tab">User Management</a>
+         
+                  
+                </div> 
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane active text-style" id="tab1">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>Your Profile</h4>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form ngNativeValidate #loginForm="ngForm"  (ngSubmit)="changepwd()" role="form" action="#" >
+                                            <div class="form-group row">
+                                                <label for="username" class="col-4 col-form-label">Mot de passe</label> 
+                                                <div class="col-8">
+                                                <input id="password" name="password" placeholder="Mot de passe" class="form-control here" required="required" type="password" minlength="7">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="username" class="col-4 col-form-label">Resaisir le Mot de passe</label> 
+                                                <div class="col-8">
+                                                <input id="password" name="repassword" placeholder="Mot de passe" class="form-control here" required="required" type="password"  minlength="7">
+                                                </div>
+                                            </div>
+        
+                                          <div class="form-group row">
+                                            <div class="offset-4 col-8">
+                                              <button name="submit" type="submit" class="btn btn-primary">Update My Profile</button>
+                                            </div>
+                                          </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane text-style" id="tab2">
+                              <h2>Dolor asit amet</h2>
+                               <p>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
+                                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+                                et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                <hr>
+                                      <img src="http://placehold.it/150x90" class="img-rounded pull-left">
+                            </div>
+                           
+                        </div>
+                                
+                      
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

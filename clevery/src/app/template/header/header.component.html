@@ -1,0 +1,213 @@
+<section class="header_area">
+    <div class="header_top">
+        <div class="container">
+            <div class="header_top_wrapper d-flex justify-content-center justify-content-md-between">
+                <div class="header_top_info d-none d-md-block">
+                    <ul>
+                        <li><img src="assets/images/call.png" alt="call"><a href="#">+216 27 294 294</a></li>
+                        <li><img src="assets/images/mail.png" alt="mail"><a href="#">contact@ted-university.com</a></li>
+                    </ul>
+                </div>
+                <div class="header_top_login">
+                   
+                    <ul class="footer_social">
+                        <li><a href="https://www.facebook.com/ispted" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/ispted" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/ted_university_/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC6_4zWYrDtp4WrncPEc_JUA" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_menu header_menu_2 header_menu_3">
+        <div class="container d-flex align-items-center">
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand logomobile m-0" [routerLink]="'/'" style="width: 18%;">
+                    <img src="../../assets/images/logoo.png"
+                      [ngStyle]="{'height': inhome ? '60%' : '152px', 'width': 'auto'}" alt="logo">
+                      
+                </a>
+              
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li>
+                            <a  [routerLink]="'/'">Ted University <i class="fa fa-chevron-down"></i></a>
+                            
+                            <ul class="sub-menu">
+                                <li><a [routerLink]="'/aboutus'">Qui sommes nous?</a></li>
+                                <li><a [routerLink]="'/mission'"> Mission Valeur Vision </a></li>
+                                <li><a [routerLink]="'/contact'">Contact</a></li>
+                            </ul>
+                        </li>
+                       
+                        <li>
+                            <a  href="index.html">Programmes <i class="fa fa-chevron-down"></i></a>
+                            <ul class="sub-menu" id="mobileadmission">
+                                <li><a [routerLink]="'/'" class="titlemega">Licences</a></li>
+                                <ng-container *ngFor="let parcour of parcours">
+
+
+                                    <li >
+                                        <a  [routerLink]="'/parcour-details/'+parcour.id" [hidden]="parcour.parcour!='licence'">{{parcour.name}}</a>
+                                    </li>
+                                </ng-container>    
+                                <li><a [routerLink]="'/'" class="titlemega">Masteres</a></li>
+                                <ng-container *ngFor="let parcour of parcours">
+
+                               
+                                    <li >
+                                        <a [routerLink]="'/parcour-details/'+parcour.id"   [hidden]="parcour.parcour!='master'">{{parcour.name}}</a>
+                                    </li>
+    
+                                    
+                                </ng-container>
+                                <li><a [routerLink]="'/'" class="titlemega">Executive Education</a></li>
+    
+                                   
+                                <ng-container *ngFor="let parcour of parcours">
+    
+                                   
+                                    <li >
+                                        <a [routerLink]="'/parcour-details/'+parcour.id"   [hidden]="parcour.parcour!='ex'">{{parcour.name}}</a>
+                                    </li>
+    
+                                    
+                                </ng-container>
+                            </ul>
+                            <ul class="sub-menu megamenuul" id="megamenuweb" style="width: 576px;height: 294px;">
+                                <li><a  [routerLink]="'/'" class="titlemega">Licences</a></li>
+
+                                <ng-container *ngFor="let parcour of parcours">
+
+
+                                    <li >
+                                        <a  [routerLink]="'/parcour-details/'+parcour.id" [hidden]="parcour.parcour!='licence'">{{parcour.name}}</a>
+                                    </li>
+                                </ng-container>    
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+
+                                 <li><a [routerLink]="'/'"  class="titlemega">Masteres</a></li>
+                                <ng-container *ngFor="let parcour of parcours">
+
+                               
+                                <li >
+                                    <a [routerLink]="'/parcour-details/'+parcour.id"   [hidden]="parcour.parcour!='master'">{{parcour.name}}</a>
+                                </li>
+
+                                
+                            </ng-container>
+                            <li><a [routerLink]="'/'"  class="titlemega">Executive Education</a></li>
+
+                               
+                            <ng-container *ngFor="let parcour of parcours">
+
+                               
+                                <li >
+                                    <a [routerLink]="'/parcour-details/'+parcour.id"   [hidden]="parcour.parcour!='ex'">{{parcour.name}}</a>
+                                </li>
+
+                                
+                            </ng-container>
+
+                                
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+
+
+
+                            </ul>
+                          
+                        </li>
+                        <li>
+                            <a  [routerLink]="'/'">Admissions <i class="fa fa-chevron-down"></i></a>
+                            
+                            <ul class="sub-menu">
+                                <li><a [routerLink]="'/preinscription'">Préinscription </a></li>
+                                <li><a [routerLink]="'/rendezvous'">Rendez-vous  </a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a [routerLink]="'/certifications'">Certifications</a>
+                        </li>
+
+                        <li>
+                            <a [routerLink]="'/partenaires'">Références</a>
+                        </li>
+
+                        <li>
+                            <a  data-toggle="modal" data-target="#loginModal" *ngIf="!isLogged">Login</a>
+                            <a href="blog.html" *ngIf="isLogged">{{text}} <i class="fa fa-chevron-down"></i></a>
+                            
+                            <ul class="sub-menu"  *ngIf="isLogged">
+                                <li><a  routerLink="/profile" >Mon profile</a></li>
+                            </ul>
+                        </li>
+                 
+                    </ul>
+                </div>
+
+                <div class="navbar_meta">
+                    <ul hidden>
+                        <li>
+                            <a id="search" href="#"><img src="../assets/images/search.png" alt="search"></a>
+                            <div class="search_bar">
+                                <input type="text" placeholder="Search">
+                                <button><i class="fa fa-search"></i></button>
+                            </div>
+                        </li>
+                        <li ><a href="#"><img src="../assets/images/cart.png" alt="cart"> <span>0</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <button type="button" class="close" data-dismiss="modal" #closebutto id="closebutto" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-title text-center">
+                    <h4>Login</h4>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <form ngNativeValidate #loginForm="ngForm" (ngSubmit)="login()" role="form" action="#">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email"
+                                placeholder="Your email address..." required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password1" name="password"
+                                [(ngModel)]="password" placeholder="Your password..." required>
+                        </div>
+                        <button type="submit" class="btn btn-info btn-block btn-round">Login</button>
+                    </form>
+                    <a class="text-center text-muted delimiter" style="color:red;">{{error}}</a>
+
+                    <a class="text-center text-muted delimiter" (click)="gotoregister()">Register</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

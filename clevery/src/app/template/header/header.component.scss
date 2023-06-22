@@ -1,0 +1,39 @@
+.megamenuul {
+    columns: 5;
+    -webkit-columns: 2;
+    -moz-columns:5;
+    column-rule: 4px solid  #545454;
+  }
+  .titlemega{
+    font-size: 6mm!important;
+    color: #545454 !important;
+  }
+  @media only screen and (max-width: 600px) {
+
+}
+@media screen and (max-width: 600px) {
+  #megamenuweb {
+    display: none !important;
+
+  }
+}
+@media screen and (min-width: 600px) {
+  #mobileadmission {
+    display: none !important;
+
+  }
+}
+
+.text{
+  font-size:50%;
+  color: #545454 !important;
+
+}
+.box {
+  background-color: #efe9e9;
+  width: 130px; /* Ajoutez la largeur souhaitée pour le box */
+  height: 80px;
+  border-bottom: 2px solid yellow ; /* Ajoutez la hauteur souhaitée pour le box */
+
+  
+}
